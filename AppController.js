@@ -36,7 +36,8 @@ function EquationModel() {
             let root1 = `${outRoot} + ${imaginary}i`;
             let root2 = `${outRoot} - ${imaginary}i`;
             const steps = `<h2>Steps for Solving the Quadratic Equation with Your Values:</h2>
-            <p>The quadratic equation is: <b>${a}x² + ${b}x + ${c} = 0</b>
+            <p>The quadratic equation is: <b>${a}x² + ${b}x + ${c} = 0</b> and is equal to 
+            <br><b>x = (-(${b}) ± √((${b})² - 4(${a})(${c}))) / 2a</b>
             <br><br>Step 1: Calculate the discriminant, the value inside the square root:
             <br><b>b² - 4ac = ${b}² - 4(${a})(${c}) = ${b*b} - ${4 * a * c} = ${discriminant}</b>
             <br><br>Step 2: Since the discriminant is negative, there are no real solutions, so we will use the imaginary unit "i" in our answer.
@@ -55,7 +56,8 @@ function EquationModel() {
             let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
             let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
             const steps = `<h2>Steps for Solving the Quadratic Equation with Your Values:</h2>
-            <p>The quadratic equation is: <b>${a}x² + ${b}x + ${c} = 0</b>
+            <p>The quadratic equation is: <b>${a}x² + ${b}x + ${c} = 0</b> and is equal to 
+            <br><b>x = (-(${b}) ± √((${b})² - 4(${a})(${c}))) / 2a</b>
             <br><br>Step 1: Calculate the discriminant, the value inside the square root:
             <br><b>b² - 4ac = ${b}² - 4(${a})(${c}) = ${b*b} - ${4 * a * c} = ${discriminant}</b>
             <br><br>Step 2: Since the discriminant is zero, we only have one real solution.
@@ -75,7 +77,8 @@ function EquationModel() {
             let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
             let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
             const steps = `<h2>Steps for Solving the Quadratic Equation with Your Values:</h2>
-            <p>The quadratic equation is: <b>${a}x² + ${b}x + ${c} = 0</b>
+            <p>The quadratic equation is: <b>${a}x² + ${b}x + ${c} = 0</b> and is equal to 
+            <br><b>x = (-(${b}) ± √((${b})² - 4(${a})(${c}))) / 2a</b>
             <br><br>Step 1: Calculate the discriminant, the value inside the square root:
             <br><b>b² - 4ac = ${b}² - 4(${a})(${c}) = ${b*b} - ${4 * a * c} = ${discriminant}</b>
             <br><br>Step 2: Since the discriminant is positive, we have two real solutions.
