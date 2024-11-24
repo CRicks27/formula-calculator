@@ -16,6 +16,26 @@ body {
     overflow: hidden;
 }
 
+#output-container {
+    width: 320px;
+    height: 337px;
+    background: linear-gradient(135deg, #ff8c00d3, #ff8c0061);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow-y: scroll;
+    -ms-overflow-style: 10px;  
+    scrollbar-width: 10px;     
+}
+
+#output-container:hover {
+    transform: translateY(-5px);
+}
+
 #screen {
     background-color: #e8e8e8;
     padding: 15px;

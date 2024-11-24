@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="screen">
+            <div id="formula">Quadratic Formula: ax² + bx + c = 0</div>
+            <div id="output"></div>
+        </div>
+        <div id="buttons">
+            <!-- Input Buttons -->
+            <div class="row">
+                <button class="btn input" onclick="InputController('a')">A</button>
+                <button class="btn input" onclick="InputController('b')">B</button>
+                <button class="btn input" onclick="InputController('c')">C</button>
+                <button class="btn" onclick="clearAll()">C</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="InputController(7)">7</button>
+                <button class="btn" onclick="InputController(8)">8</button>
+                <button class="btn" onclick="InputController(9)">9</button>
+                <button class="btn" onclick="EquationModel()">=</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="InputController(4)">4</button>
+                <button class="btn" onclick="InputController(5)">5</button>
+                <button class="btn" onclick="InputController(6)">6</button>
+                <button class="btn" onclick="HistoryController()">History</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="InputController(1)">1</button>
+                <button class="btn" onclick="InputController(2)">2</button>
+                <button class="btn" onclick="InputController(3)">3</button>
+                <button class="btn" onclick="InputController(0)">0</button>
+            </div>
+        </div>
+    </div>
+    <script src="AppController.js"></script>
+    <div id="output-container">
+        <h2>Quadratic Formula Calculator!</h2><br>
+        <p><b>Please enter a value for the variables a, b, and c into the calculator by first selecting a 
+            letter and then entering a number.</b></p>
+        <p><b>Note that the values MUST be inputted in "a b c" order and that the value for a CANNOT be 0.</b></p>
+        <p><b>Clicking "History" will show your past calculations.</b></p>
+    </div>
+</body>
+</html>
